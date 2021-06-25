@@ -1,12 +1,10 @@
-import React,{ Component } from 'react';
+import React from 'react';
 import PROJECTS from './data/projects';
 
-class Project extends Component {
-
-    render(){
+const Project = (props) => {
 
         //console.log(this.props);
-        const {title,description,link,image} = this.props.project;
+        const {title,description,link,image} = props.project;
 
         return(
             <div style={{ display:'inline-block', width:200, margin:10}}>
@@ -17,11 +15,9 @@ class Project extends Component {
             </div>
         )
     }
-}
 
-class Projects extends Component {
+const Projects = () => {
 
-    render(){
         return(
             <div>
                 <h2>Project List</h2>
@@ -37,6 +33,6 @@ class Projects extends Component {
             </div>
         )
     }
-}
+
 
 export default Projects;

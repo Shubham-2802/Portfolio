@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
+import Title from './Title';
 
 class App extends Component{
 
@@ -19,13 +20,14 @@ class App extends Component{
     render(){
         return(
             <div>
-                <h1>First Component!!</h1>
+                <h1>! PORTFOLIO !</h1>
+                <Title />
                 <p>Getting back on track within a month will be a challenge</p>
                 <p>But i love challenges.</p>
                 {
                 (this.state.displayBio)
                 ?(<div>
-                    <p>Just going through the basics of React.</p>
+                    <p>Just going through the basics of React</p>
                     <p>Nonetheless React is an awesome framework.</p>
                     <p>After learning the framework, will be raedy for building good front end UI.</p>
                     <button onClick={this.changeBioState}>Show Less</button>
