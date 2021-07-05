@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
+import Jokes from './Jokes';
 
 class App extends Component{
 
@@ -16,6 +17,10 @@ class App extends Component{
     changeBioState = () => {
         this.setState({displayBio:!this.state.displayBio});
     }
+
+    // displayJokes = () => {
+    //     <Jokes/>
+    // }
 
     render(){
         return(
@@ -40,6 +45,10 @@ class App extends Component{
                  <Projects />
                  <hr/>
                  <SocialProfiles />
+                 <hr/>
+                 {/* <h2>Click to get 10 random jokes!</h2>
+                 <button onClick={this.displayJokes}>Get Jokes</button> */}
+                 <Jokes />
             </div>
         )
     }
